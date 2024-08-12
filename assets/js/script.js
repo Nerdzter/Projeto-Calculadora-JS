@@ -22,7 +22,7 @@ function chooseOperation(op) {
     }
     operation = op;
     previousOperand = currentOperand;
-    currentOperand = '';
+        currentOperand = '';
     display.value = '';
 }
 

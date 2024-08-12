@@ -1,35 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
-:root{
-    font-family: "Figtree", sans-serif;
+:root {
+    --primary-bg: #1e1e1e;
+    --secondary-bg: #333;
+    --accent-color: #00ff99;
+    --text-color: #e0e0e0;
+    --button-bg: #2c2c2c;
+    --button-hover-bg: #444;
+    --border-color: #00ff99;
+    font-family: 'Figtree', sans-serif;
 }
-
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: var(--primary-bg);
 }
 
 .calculator {
-    background-color: #fff;
+    background-color: var(--secondary-bg);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 #display {
     width: 100%;
-    height: 40px;
-    margin-bottom: 10px;
+    height: 50px;
+    margin-bottom: 15px;
     text-align: right;
-    font-size: 24px;
-    padding-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 28px;
+    padding-right: 15px;
+    color: var(--text-color);
+    background-color: var(--button-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
 }
 
 .buttons {
@@ -41,14 +48,21 @@ body {
 button {
     width: 100%;
     padding: 20px;
-    font-size: 18px;
+    font-size: 20px;
     border: none;
-    background-color: #f0f0f0;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border-radius: 10px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: #002c1a;
+    transform: scale(1.05);
+}
+
+h1{
+    text-align: center;
+    color: #00ff99;
 }
